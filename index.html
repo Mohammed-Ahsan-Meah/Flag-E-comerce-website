@@ -42,12 +42,13 @@
     <header class="hero">
     
   <div class="video-container">
-  <video autoplay muted loop playsinline preload="auto" 
-       poster="images/phone.jpg"
-       class="bg-video">>
-    <source src="video/pc2.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
+  <video class="bg-video" autoplay muted loop playsinline poster="images/poster.jpg">
+    <!-- Mobile video -->
+    <source src="videos/mobile.mp4" media="(max-width: 768px)" type="video/mp4">
+    
+    <!-- Desktop video -->
+    <source src="videos/desktop.mp4" media="(min-width: 769px)" type="video/mp4">
+</video>
 </div>
     <div class="hero-overlay"></div>
 
