@@ -770,8 +770,8 @@ h1, h2, h3, p {
 
 
 .hero-logo {
-    width: 300px; /* adjust size as needed */
-    height: auto;
+    width: 700px; /* adjust size as needed */
+    height: 800px;
     display: block;
     margin: 0 auto;
 }
