@@ -768,10 +768,10 @@ h1, h2, h3, p {
     }
 }
 
-
 .hero-logo {
-    width: 1300px; /* adjust size as needed */
-    height: 1200px;
+    width: 450px;  /* increase size, change as needed */
+    max-width: 90%; /* prevents overflow on smaller screens */
+    height: auto;   /* keeps aspect ratio */
     display: block;
     margin: 0 auto;
 }
