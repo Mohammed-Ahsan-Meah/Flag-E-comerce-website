@@ -712,13 +712,10 @@ h1, h2, h3, p {
     }
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 /* Video container */
@@ -728,7 +725,7 @@ h1, h2, h3, p {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -2;
 }
 
 /* Video styling */
@@ -736,8 +733,9 @@ h1, h2, h3, p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    /* Smooth zoom animation */
     animation: zoomEffect 20s infinite alternate ease-in-out;
-    display: block; /* default for PC */
 }
 
 /* Dark overlay */
@@ -748,44 +746,22 @@ h1, h2, h3, p {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.5);
-    z-index: 1;
+    z-index: -1;
 }
 
-/* Hero content */
+/* Content */
 .hero-content {
     position: relative;
     z-index: 2;
     color: white;
-    text-align: center;
 }
 
 /* Zoom animation */
 @keyframes zoomEffect {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
-}
-
-/* Mobile → hide video, show poster */
-@media (max-width: 768px) {
-    .bg-video {
-        display: none !important; /* ensure hidden */
+    0% {
+        transform: scale(1);
     }
-
-    .video-container {
-        display: block !important;
-        width: 100%;
-        height: 100vh !important; /* full viewport height */
-        background: url('images/phone.jpg') no-repeat center center;
-        background-size: cover;
-    }
-
-    .hero {
-        height: 100vh !important;
-        padding: 0 !important;
-    }
-
-    .hero-overlay {
-        background: rgba(0,0,0,0.5);
+    100% {
+        transform: scale(1.1);
     }
 }
-
