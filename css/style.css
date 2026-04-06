@@ -789,3 +789,57 @@ h1, h2, h3, p {
     }
 }
 
+
+/* Modern Cursive Hero Text */
+.hero h1,
+.hero p,
+.about-content h1,
+.about-content p,
+.contact-form h2,
+.products h3 {
+    font-family: 'Dancing Script', 'Pacifico', 'Cursive', sans-serif; /* Modern cursive fonts */
+    font-style: italic;
+    font-weight: 400; /* smooth, not too bold */
+    color: #ff4d4d; /* soft modern red */
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3); /* subtle depth */
+}
+
+/* Hero subtitle smaller and elegant */
+.hero p {
+    font-size: 1.5rem;
+    color: #ff9999;
+}
+
+/* About & Contact */
+.about-content p,
+.contact-form p {
+    font-size: 1.2rem;
+    color: #ffd6d6;
+}
+
+/* Buttons modern style */
+.product-card button,
+.contact-form button {
+    font-family: 'Dancing Script', 'Cursive';
+    font-style: italic;
+    background: linear-gradient(45deg, #ff4d4d, #ff9999);
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.product-card button:hover,
+.contact-form button:hover {
+    background: linear-gradient(45deg, #ff9999, #ff4d4d);
+    transform: scale(1.05);
+}
+
+/* Smooth transition for all text */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
