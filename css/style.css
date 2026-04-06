@@ -767,20 +767,4 @@ h1, h2, h3, p {
 }
 
 
-@media (max-width: 768px) {
-    .bg-video {
-        object-fit: cover;
-    }
-}
 
-
-
-@media (max-width: 768px) {
-    .bg-video {
-        display: none;
-    }
-
-    .video-container {
-        background: url('images/phone.jpg') no-repeat center center/cover;
-    }
-}
