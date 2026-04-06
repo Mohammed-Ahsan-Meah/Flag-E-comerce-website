@@ -717,6 +717,8 @@ h1, h2, h3, p {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Video container */
@@ -766,23 +768,22 @@ h1, h2, h3, p {
 /* Mobile → hide video, show poster */
 @media (max-width: 768px) {
     .bg-video {
-        display: none;
+        display: none !important; /* ensure hidden */
     }
 
     .video-container {
-        display: block;               
+        display: block !important;
         width: 100%;
-        height: 100vh;
+        height: 100vh !important; /* full viewport height */
         background: url('images/phone.jpg') no-repeat center center;
         background-size: cover;
     }
 
     .hero {
-        height: 100vh;
-        padding: 0;
+        height: 100vh !important;
+        padding: 0 !important;
     }
 
-    /* Keep dark overlay on mobile if needed */
     .hero-overlay {
         background: rgba(0,0,0,0.5);
     }
