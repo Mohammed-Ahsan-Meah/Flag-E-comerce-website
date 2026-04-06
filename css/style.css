@@ -769,9 +769,15 @@ h1, h2, h3, p {
 }
 
 .hero-logo {
-    width: 450px;  /* increase size, change as needed */
-    max-width: 90%; /* prevents overflow on smaller screens */
-    height: auto;   /* keeps aspect ratio */
+    width: 450px;
+    max-width: 90%;
+    height: auto;
     display: block;
     margin: 0 auto;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 10px #fff); }
+    100% { filter: drop-shadow(0 0 25px #fff); }
 }
