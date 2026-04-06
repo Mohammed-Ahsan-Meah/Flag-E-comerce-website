@@ -550,11 +550,13 @@ h1, h2, h3, p {
 /* Hero slider wrapper */
 .hero {
     position: relative;
-    height: 600px;
-    overflow: hidden;
-    perspective: 1200px; /* 3D effect */
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
     text-align: center;
-    padding: 200px 50px;
+    overflow: hidden;
+    padding: 0 50px; /* optional horizontal padding */
     animation: fadeIn 3s ease-in-out;
 }
 
@@ -764,4 +766,12 @@ h1, h2, h3, p {
     100% {
         transform: scale(1.1);
     }
+}
+
+
+.hero-logo {
+    width: 300px; /* adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
